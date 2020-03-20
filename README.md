@@ -23,6 +23,8 @@ I want to sign up to Air BNB
 
 * Ruby version 2.5.1
 
+* This app uses RSpec and Capybara
+
 * System dependencies:
 
 * Configuration:
