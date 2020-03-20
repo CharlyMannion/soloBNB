@@ -1,24 +1,38 @@
-# README
+# SOLO BNB
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A web application that allows users to list spaces they have available, and to hire spaces for the night (a simlple clone of AirBNB).
 
-Things you may want to cover:
+This app uses the Ruby on Rails Web Application Framework.
 
-* Ruby version
+## User Stories
 
-* System dependencies
+```
+As a homeowner
+So I can rent my home for extra income
+I want to sign up to Air BNB
+```
 
-* Configuration
+## Using the Application
 
-* Database creation
+* Fork this repo
+* Clone to your local machine `git clone https://github.com/CharlyMannion/soloBNB`
+* `bundle install`
+* To use the app locally, run `rails server` and visit http://localhost:3000
 
-* Database initialization
+## Basic info
 
-* How to run the test suite
+* Ruby version 2.5.1
 
-* Services (job queues, cache servers, search engines, etc.)
+* System dependencies:
 
-* Deployment instructions
+* Configuration:
 
-* ...
+* Database creation:
+
+* Database initialization:
+
+* How to run the test suite:
+
+* Services (job queues, cache servers, search engines, etc.):
+
+* Deployment instructions:
