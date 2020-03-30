@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
-  resources :listings, only: [:index, :show, :new, :create, :destroy]
+  resources :listings, only: [:index, :show, :new, :edit, :update, :create, :destroy]
 
   get 'signup', to: 'users#new', as: 'signup'
   get 'login', to: 'sessions#new', as: 'login'

@@ -11,6 +11,10 @@ class ListingsController < ApplicationController
     @listing = Listing.new
   end
 
+  def edit
+    @listing = Listing.find(params[:id])
+  end
+
   def create
     @listing = Listing.new(listing_params)
 
@@ -20,6 +24,16 @@ class ListingsController < ApplicationController
       render 'new'
     end
   end
+
+  def update
+  @listing = Listing.find(params[:id])
+
+  if @listing.update(listing_params)
+    redirect_to @listing
+  else
+    render 'edit'
+  end
+end
 
   def destroy
   end
