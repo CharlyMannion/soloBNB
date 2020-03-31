@@ -4,6 +4,7 @@
   <tr>
     <th>Title</th>
     <th>Text</th>
+    <th>Property Owner</th>
     <th></th>
   </tr>
 
@@ -11,6 +12,7 @@
     <tr>
       <td><%= listing.title %></td>
       <td><%= listing.text %></td>
+      <td><%= listing.username %></td>
       <td><%= link_to 'Show', listing_path(listing) %></td>
       <td><%= link_to 'Edit', edit_listing_path(listing) %></td>
       <td><%= link_to 'Destroy', listing_path(listing),

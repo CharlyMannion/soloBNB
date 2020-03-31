@@ -15,6 +15,6 @@ feature "User logs in after sign up" do
 
     expect(page).to have_content "A beautiful test"
     expect(page).to have_content "Some shit about the test"
-    # expect(page).to have_content "MyUsername"
+    expect(page).to have_content "MyUsername"
   end
 end
