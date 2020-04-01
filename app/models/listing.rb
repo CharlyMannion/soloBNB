@@ -1,5 +1,5 @@
 class Listing < ApplicationRecord
-  belongs_to :user
+  # belongs_to :user
   validates :title, presence: true,
                    length: { minimum: 5 }
 end

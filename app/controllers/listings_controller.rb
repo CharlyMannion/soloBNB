@@ -16,7 +16,8 @@ class ListingsController < ApplicationController
   end
 
   def create
-    @listing = Listing.new(listing_params.merge(username: session[:user]))
+    @current_user = User.find(session[:user_id])
+    @listing = Listing.new(listing_params.merge(username: @current_user.username))
 
     if @listing.save
       redirect_to @listing
